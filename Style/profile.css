@@ -1,0 +1,21 @@
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--grey);
+    letter-spacing: .3rem;
+    color: var(--grey);
+}
+
+.cover-image{
+
+    display: grid;
+    /* grid-template-columns: 1fr 3fr; */
+
+    height: 20rem;
+    background-color: var(--white_grey);
+    margin-top: 1rem;
+}
+
