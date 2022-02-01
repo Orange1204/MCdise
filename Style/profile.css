@@ -36,14 +36,32 @@
     border: 5px solid white;
 }
 
-
 .profile-detail {
     position: absolute;
     display: flex;
     padding-left: 270px;
-    bottom: 145px;
+    bottom: 200px;
     justify-content: space-between;
     width: 948px;
+}
+
+.shop-name { 
+    display: flex;
+    gap: 0.5rem;
+}
+
+.edit-username {
+    gap: 0.2rem;
+    display: flex;
+    position: relative;
+    top: -5px;
+    font-size: 12px;
+    color: rgb(129, 129, 129);
+    align-items: center;
+}
+
+.edit-icon img {
+    width: min-content;
 }
 
 .profile-description{
@@ -92,6 +110,29 @@
     justify-content: center;
     border-top: 2px solid var(--grey);
     padding-top: 2%;
+}
+
+.profile-item a:hover{
+    color: var(--emerald);
+    font-weight: bold;
+    border-bottom: 2px solid var(--emerald);
+}
+
+.description-detail{
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    border-top: 2px solid var(--grey);
+    padding: 2% 7% 0 7%;
+}
+
+.description-container{
+    width: 60%;
+}
+
+.shop-location{
+    display: flex;
+    gap: 0.7rem;
 }
 
 .title-category {
@@ -151,7 +192,7 @@ td:hover {
 }
 
 .section-container {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .section-container :first-child{

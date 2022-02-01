@@ -12,64 +12,7 @@
     <link rel="stylesheet" href="./Style/style.css">
     <link rel="stylesheet" href="./Style/profile.css ?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="./CommonShared/headfoot.css ?v=<?php echo time(); ?>">
-
 </head>
-
-<!-- styling khusus profile seller -->
-<style>
-    .cover-image {
-        overflow: hidden;
-        background-color: black;
-    }
-
-    .profile-image {
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-        overflow: hidden;
-        background-color: black;
-    }
-
-    .profile-image:hover .profilepic__content {
-        opacity: 1;
-    }
-
-    .cover-image:hover .profilepic__content {
-        opacity: 1;
-    }
-
-    .profile-image:hover .profile-pic{
-        opacity: 0.5;
-    }
-
-    .cover-image:hover .cover-pic {
-        opacity: 0.5;
-    }
-
-    .profilepic__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        font-weight: 500;
-        opacity: 0;
-        transition: opacity .2s ease-in-out;
-    }
-
-    .profile-image > .profilepic__content {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-    }
-
-    .cover-image > .profilepic__content {
-        position: relative;
-        top: -200px;
-    }
-</style>
 
 <body>
     <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
@@ -84,20 +27,10 @@
 
                 <div class="wrapper">
                     <div class="cover-image">
-                        <img src="/Assets/cover.jpg" class="cover-pic">
-                        <!-- tambahan untuk transisi-->
-                        <div class="profilepic__content">
-                            <span class="profilepic__icon"><img src="/Assets/camera-white-icon.png" alt=""></span>
-                            <span class="profilepic__text">Edit Cover</span>
-                        </div>
+                    <img src="/Assets/cover.jpg" class="cover-pic">
                     </div>
                     <div class="profile-image">
                         <img src="/Assets/profile.jpeg" class="profile-pic">
-                        <!-- tambahan untuk transisi-->
-                        <div class="profilepic__content">
-                            <span class="profilepic__icon"><img src="/Assets/camera-white-icon.png" alt=""></span>
-                            <span class="profilepic__text">Edit Profile</span>
-                        </div>
                     </div>
                 </div>
                 
@@ -105,17 +38,7 @@
                 <div class="profile-detail">
                     <div class="profile-description">
                         <div class="shop-name">
-                            <div class="profile-username">
-                                <h2>Shop Name</h2>
-                            </div>
-                            <div class="edit-username">
-                                <div class="edit-icon">
-                                    <img src="/Assets/edit-icon.png" alt="">
-                                </div>
-                                <div class="edit-text">
-                                    Edit Shop Name
-                                </div>
-                            </div>
+                            <h2>Shop Name</h2>
                         </div>
                         <div class="shop-count">
                             <div class="product-count">
@@ -148,27 +71,24 @@
                     </div>
                 </div>
 
-                <!-- navbar profile -->
-                <div class="profile-navbar">
-                    <div></div> 
-                    <!-- kl ga dikasi DIV tambahan, CSS "Product" nya ga mau jalan -->
-                    <div class="profile-item">
-                        <a href="">Product</a>
+                <!-- Profile Description -->
+                <div class="description-detail">
+                    <div class="description-container">
+                        <div class="description-title">
+                            <h2>Description</h2>
+                        </div>
+                        <div class="description-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa adipiscing odio urna viverra faucibus mus egestas quisque mauris.</p>
+                        </div>
                     </div>
-                    <div class="profile-item">
-                        <a href="">About</a>
-                    </div>
-                    <div class="profile-item">
-                        <a href="">Statistics</a>
-                    </div>
-                    <div class="profile-item">
-                        <a href="">Track Order</a>
-                    </div>
-                    <div class="profile-item">
-                        <a href="">Order History</a>
-                    </div>
-                    <div class="profile-item">
-                        <a href="">Settings</a>
+                    <div class="medsos-container">
+                        <div class="medsos-title">
+                            <h2>Media Social</h2>
+                        </div>
+                        <div class="medsos-content">
+                            <p>Instagram     :     @ululala</p>
+                            <p>Twitter       :     @laalaa</p> 
+                        </div>
                     </div>
                 </div>
             </section>          
@@ -223,9 +143,6 @@
                 </div>     
             </section>
         </div>
-        <div class="add-product-href">
-            <a href="" class="emerald button">Add Product Design</a>
-        </div>  
     </main>
 
     <?php include($commonSharedFolder . "footer.html"); ?>
