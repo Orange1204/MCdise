@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="./Style/profile.css">
-    <link rel="stylesheet" href="./CommonShared/headfoot.css">
+    <link rel="stylesheet" href="./Style/profile.css ?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./CommonShared/headfoot.css ?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -20,8 +20,8 @@
 
     <main class="container">
         <div class="section-container">
-            <section class="shop-profile" id="shop-profile">
-                <div class="title">
+            <section class="shop-profile">
+                <div class="title-page">
                     <h2>Shop Profile</h2>
                 </div>
 
@@ -91,16 +91,61 @@
                         <a href="">Settings</a>
                     </div>
                 </div>
-            </section>
-
-            
+            </section>          
         </div>
 
-        <!-- <div class="section-container">
-            <section class="shop-navbar">
+        <div class="section-container">
+            <section class="item-navbar">
+                <div class="title-category">
+                    <div class="profile-category">
+                        <img src="/Assets/category-icon.png" alt="">
+                        <h2>Category</h2>
+                    </div>
+                    <div class="search-bar-container">
+                        <div class="search-bar">
+                            Search...
+                            <img src="/Assets/search-bar-icon.png" alt="">
+                        </div>
+                        <img src="/Assets/filter-icon.png" alt="">
+                    </div>          
+                </div>  
+                <div class="item-container">
+                    <?php for ($i = 0; $i < 10; $i++) : ?>
+                        <div class="popular-tile">
+                            <div class="popular-image">
+                                <img src="./Assets/topMerch.png" alt="">
+                            </div>
+                            <div class="productDescription">
+                                <div class="productName">Product Title</div>
+                                <div class="productInfo">
+                                    <p class="productPrice">Rp 110.000</p>
+                                    <p class="productCount">10K+ Sold</p>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endfor; ?>
+                </div>
 
+                <div class="paginations">
+                    <table cellspacing="5" cellpadding="30">
+                        <tr>
+                            <td><a href="">&laquo;</a></td>
+                            <td><a href="">1</a></td>
+                            <td><a href="">2</a></td>
+                            <td><a href="">3</a></td>
+                            <td><a href="">4</a></td>
+                            <td>...</td>
+                            <td><a href="">9</a></td>
+                            <td><a href="">10</a></td>
+                            <td><a href="">&raquo;</a></td>
+                        </tr>
+                    </table>
+                </div>     
             </section>
-        </div> -->
+        </div>
+        <div class="add-product-href">
+            <a href="" class="emerald button">Add Product Design</a>
+        </div>  
     </main>
 
     <?php include($commonSharedFolder . "footer.html"); ?>

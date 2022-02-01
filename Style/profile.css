@@ -1,5 +1,4 @@
-
-.title > h2 {
+.title-page > h2 {
     text-align: center;
     font-size: 2rem;
     font-weight: 600;
@@ -39,11 +38,12 @@
 
 
 .profile-detail {
-    position: relative;
+    position: absolute;
     display: flex;
     padding-left: 270px;
-    top: -170px;
+    bottom: 145px;
     justify-content: space-between;
+    width: 948px;
 }
 
 .profile-description{
@@ -57,14 +57,14 @@
 
 .shop-count {
     width: 100%;
-    padding-top: 7px;
-    padding-bottom: 20px;
+    padding-top: 2px;
+    padding-bottom: 15px;
     justify-content: space-between;
     display: flex;
 }
 
 .profile-rating{
-    width: 32%;
+    width: 35%;
     justify-content: space-between;
     display: flex;
     align-items: flex-end;
@@ -88,12 +88,72 @@
 
 .profile-navbar{
     display: flex;
-    position: relative;
     gap: 2em;
-    margin: auto;
     justify-content: center;
     border-top: 2px solid var(--grey);
-    top: -125px;
     padding-top: 2%;
-    padding-bottom: 2%;
+}
+
+.title-category {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--grey);
+    padding: 10px;
+}
+
+.title-category img{
+    height: min-content;
+}
+
+.profile-category{
+    gap: 1.5rem;
+    align-items: center;
+    display: flex;
+}
+
+.search-bar {  
+    color: slategray;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 15px 5px 15px;
+    background-color: #f8f8f8;
+    border-radius: 15px;
+    border: 2px solid #a1a1a1;
+}
+
+.search-bar-container{
+    gap: 5px;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar img{
+    height: fit-content;
+}
+
+.add-product-href{
+    display: flex;
+    justify-content: right;
+    padding-bottom: 10rem;
+}
+
+th,td {
+    padding: 10px;
+}
+
+td:hover {
+    background-color: #a1a1a1;
+}
+
+.section-container {
+    margin-bottom: 3rem;
+}
+
+.section-container :first-child{
+    overflow: hidden;
 }
