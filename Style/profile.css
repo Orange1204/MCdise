@@ -139,7 +139,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 3px solid var(--grey);
+    border-bottom: 2px solid var(--grey);
     padding: 10px;
 }
 
@@ -197,4 +197,157 @@ td:hover {
 
 .section-container :first-child{
     overflow: hidden;
+}
+
+.track-container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+
+.track-header {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #87bfc3;
+}
+
+.track-title {
+    color: #3F3F3F;
+    font-size: 16px;
+}
+
+.track-text {
+    color: #223031;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.track-item {
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.collapsible {
+    background-color: #59a6ac;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+}
+  
+.active, .collapsible:hover {
+    background-color: #3e7479;
+}
+  
+/* tanda '+' */
+.collapsible:after { 
+    content: '\002B'; 
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+ 
+/* tanda '-' */
+.active:after {
+    content: "\2212";
+}
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f8f8f8;
+}
+
+.order-item-detail {
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.item-pic-det {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.orderSize-color {
+    display: flex;
+}
+
+.item-picture {
+    width: 100px;
+    height: 100px; 
+    padding: 5%;
+    border-radius: 15px;
+    background-color: #f6f6f6;
+}
+
+.item-picture img {
+    width: 100%;
+}
+
+.orderItem-title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.orderSize-color {
+    color: #646464;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.order-color {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.box-color {
+    height: 12px;
+    width: 12px;
+    border: 1px solid black;
+    background-color: #242424;
+}
+
+
+.order-price {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.track-recipient-container {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.totalOrder-item{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--grey);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.total-price {
+    color: #D8571F;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.total-title {
+    font-size: 20px;
 }
