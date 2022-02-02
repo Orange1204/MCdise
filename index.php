@@ -15,7 +15,13 @@
 </head>
 
 <body>
-    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
+    <!-- root XAMPP = htdocs -->
+    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/MCdise/CommonShared/"; ?>
+
+    <!-- uncomment kalau root XAMPP = MCdise -->
+    <?php //$commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; 
+    ?>
+
     <?php include($commonSharedFolder . "header.html"); ?>
 
     <div class="posters">
