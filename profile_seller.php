@@ -72,7 +72,7 @@
 </style>
 
 <body>
-    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
+    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/MCdise/CommonShared/"; ?>
     <?php include($commonSharedFolder . "header.html"); ?>
 
     <main class="container">
@@ -84,18 +84,18 @@
 
                 <div class="wrapper">
                     <div class="cover-image">
-                        <img src="/Assets/cover.jpg" class="cover-pic">
+                        <img src="./Assets/cover.jpg" class="cover-pic">
                         <!-- tambahan untuk transisi-->
                         <div class="profilepic__content">
-                            <span class="profilepic__icon"><img src="/Assets/camera-white-icon.png" alt=""></span>
+                            <span class="profilepic__icon"><img src="./Assets/camera-white-icon.png" alt=""></span>
                             <span class="profilepic__text">Edit Cover</span>
                         </div>
                     </div>
                     <div class="profile-image">
-                        <img src="/Assets/profile.jpeg" class="profile-pic">
+                        <img src="./Assets/profile.jpeg" class="profile-pic">
                         <!-- tambahan untuk transisi-->
                         <div class="profilepic__content">
-                            <span class="profilepic__icon"><img src="/Assets/camera-white-icon.png" alt=""></span>
+                            <span class="profilepic__icon"><img src="./Assets/camera-white-icon.png" alt=""></span>
                             <span class="profilepic__text">Edit Profile</span>
                         </div>
                     </div>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="edit-username">
                                 <div class="edit-icon">
-                                    <img src="/Assets/edit-icon.png" alt="">
+                                    <img src="./Assets/edit-icon.png" alt="">
                                 </div>
                                 <div class="edit-text">
                                     Edit Shop Name
@@ -129,7 +129,7 @@
                             </div>
                         </div>
                         <div class="shop-location">
-                            <img src="/Assets/location-icon.png" alt="">
+                            <img src="./Assets/location-icon.png" alt="">
                             <h4>Sentul, Bogor</h4>
                         </div>
                     </div>
@@ -178,15 +178,15 @@
             <section class="item-navbar">
                 <div class="title-category">
                     <div class="profile-category">
-                        <img src="/Assets/category-icon.png" alt="">
+                        <img src="./Assets/category-icon.png" alt="">
                         <h2>Category</h2>
                     </div>
                     <div class="search-bar-container">
                         <div class="search-bar">
                             Search...
-                            <img src="/Assets/search-bar-icon.png" alt="">
+                            <img src="./Assets/search-bar-icon.png" alt="">
                         </div>
-                        <img src="/Assets/filter-icon.png" alt="">
+                        <img src="./Assets/filter-icon.png" alt="">
                     </div>          
                 </div>  
                 <div class="item-container">

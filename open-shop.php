@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
+    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/MCdise/CommonShared/"; ?>
     <?php include($commonSharedFolder . "header.html"); ?>
 
     <main class="container">
@@ -31,7 +31,7 @@
                             <p>Dengan mendaftar, Anda setuju dengan Syarat, Ketentuan dan Kebijakan dari MCdise & Kebijakan Privasi</p>
                         </div>
                         <div class="daftarkan-image">
-                            <img src="/Assets/signIn-decor.png" alt="">
+                            <img src="./Assets/signIn-decor.png" alt="">
                         </div>
                     </div>
                     <div class="signIn-right">
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="motto-image">
-                        <img src="/Assets/motto.png" alt="">
+                        <img src="./Assets/motto.png" alt="">
                     </div>
                 </div>
             </section>
