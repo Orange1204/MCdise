@@ -154,6 +154,24 @@
                                         <p>(229) 555-0109</p>
                                         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
                                     </div>
+                                    <div class="card-timeline">                                      
+                                        <div class="order-tracking completed">
+                                            <span class="is-complete"></span>
+                                            <p>Ordered<br><span>12:18 WIB 17/02/2022</span></p>
+                                        </div>
+                                        <div class="order-tracking completed">
+                                            <span class="is-complete"></span>
+                                            <p>Printing<br><span>17:20 WIB 18/02/2022</span></p>
+                                        </div>
+                                        <div class="order-tracking current">
+                                            <span class="is-complete"></span>
+                                            <p>In Transit<br><span>18:15 WIB 20/02/2022</span></p>
+                                        </div>
+                                        <div class="order-tracking">
+                                            <span class="is-complete"></span>
+                                            <p>Completed<br><span></span></p>
+                                        </div>                            
+                                    </div>
                                     <?php for ($i = 0; $i < 2; $i++) : ?>
                                         <div class="order-item-detail">
                                             <div class="item-pic-det">

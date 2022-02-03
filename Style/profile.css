@@ -351,3 +351,103 @@ td:hover {
 .total-title {
     font-size: 20px;
 }
+
+/* https://codepen.io/nandhukumar/pen/pMwdxY */
+.card-timeline {
+    display: flex;  
+    justify-content: space-around;
+    padding: 2%;
+    margin: 5%;
+}
+
+.order-tracking{
+	text-align: center;
+	position: relative;
+	display: block;
+}
+
+.order-tracking .is-complete{
+	display: block;
+	position: relative;
+	border-radius: 50%;
+	height: 30px;
+	width: 30px;
+	background-color: #cdcdcd;
+	margin: 0 auto;
+}
+
+/* letak icon */
+.order-tracking .is-complete:after {
+	display: block;
+	position: absolute;
+	content: '';
+	height: 14px;
+	width: 7px;
+	top: -2px;
+	bottom: 0;
+	left: 11px;
+	margin: auto 0;
+	border: 0px solid #AFAFAF;
+	border-width: 0px 2px 2px 0;
+	transform: rotate(45deg);
+}
+
+/* current status */
+.order-tracking.current .is-complete{
+    background-color: #f7be16;
+}
+
+.order-tracking.current .is-complete:after {
+	border-color: #fff;
+	border-width: 0px 3px 3px 0;
+	width: 7px;
+	left: 10px;
+}
+
+/* already completed status */
+/* warna bg icon */
+.order-tracking.completed .is-complete{
+	background-color: #27aa80;
+}
+
+/* icon checklist */
+.order-tracking.completed .is-complete:after {
+	border-color: #fff;
+	border-width: 0px 3px 3px 0;
+	width: 7px;
+	left: 10px;
+}
+
+.order-tracking p {
+	color: #A4A4A4;
+	font-size: 18px;
+	margin-top: 8px;
+	margin-bottom: 0;
+	line-height: 20px;
+}
+.order-tracking p span {
+    font-size: 11px;
+    color: #646464;
+}
+
+.order-tracking.current p,
+.order-tracking.completed p {
+    color: #000; font-weight: bold;
+}
+
+.order-tracking::before {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 100%;
+	background-color: #cdcdcd;
+	top: 13px;
+	position: absolute;
+	left: calc(-50% - 40px);
+}
+
+/* hilangin ekornya */
+.order-tracking:first-child:before{display: none;}
+.order-tracking.current:before{background-color: #f7be16;}
+.order-tracking.completed:before{background-color: #27aa80;}
+
