@@ -177,10 +177,22 @@
     height: fit-content;
 }
 
-.add-product-href{
+.illus-image {
+    width: 100%;
+}
+
+.item-container.blank {
     display: flex;
-    justify-content: right;
-    padding-bottom: 10rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+
+.add-product-href{
+    position: relative;
+    top: -20px;
 }
 
 th,td {
