@@ -15,17 +15,116 @@
 </head>
 
 <body>
+    <!-- root XAMPP = htdocs -->
+    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/MCdise/CommonShared/"; ?>
 
-    <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
+    <!-- uncomment kalau root XAMPP = MCdise -->
+    <?php //$commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; 
+    ?>
+
     <?php include($commonSharedFolder . "header.html"); ?>
 
     <main class="container">
         <section class="product-detail">
             <div class="product-detail-left">
-
+                <div class="detail-image-zoomed detail-tile">
+                    <img src="./Assets/tshirt_plain.png" alt="">
+                </div>
+                <div class="detail-image-container">
+                    <div class="detail-image-content">
+                        <div class="detail-tile">
+                            <img src="./Assets/tshirt_frontPlain.png" alt="">
+                        </div>
+                        <p>Front</p>
+                    </div>
+                    <div class="detail-image-content">
+                        <div class="detail-tile">
+                            <img src="./Assets/tshirt_backPlain.png" alt="">
+                        </div>
+                        <p>Back</p>
+                    </div>
+                </div>
             </div>
+
             <div class="product-detail-right">
-                <h2 class="section-title">Kaos O-Neck Pria</h2>
+                <div class="detail-title">
+                    <h2 class="section-title">Kaos O-Neck Pria</h2>
+                    <!-- <div class="detail-extra">
+                        <div class="detail-extra-rating">
+                            <p>4.5</p>
+                            <img src="./Assets/star-4half.png" alt="">
+                        </div>
+                        <div class="detail-extra-info">
+                            <p>73 Reviews</p>
+                            <p>7.4k Sold</p>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="detail-price detail-tile">
+                    <div class="price-container">
+                        <p>Normal Price</p>
+                        <p>Rp 55.000,00</p>
+                    </div>
+                    <div class="price-container">
+                        <p>Discount</p>
+                        <p>-</p>
+                    </div>
+                    <div id="total-price" class="price-container">
+                        <p>Total Price</p>
+                        <p>Rp 55.000,00</p>
+                    </div>
+                </div>
+
+                <div class="detail-upload">
+                    <div class="upload-image">
+                        <div class="upload button">
+                            <img src="./Assets/icon_upload.png" alt="">
+                            <p>Upload Image</p>
+                        </div>
+                        <p class="upload-clause">(.JPG, .JPEG, .PNG)</p>
+                    </div>
+
+                    <div class="publish-design">
+                        <div class="publish button">
+                            <img src="./Assets/icon_publish.png" alt="">
+                            <p>Publish Design</p>
+                        </div>
+                        <p class="upload-clause">Upload the design first</p>
+                    </div>
+                </div>
+
+                <div class="detail-variation-container">
+                    <div class="detail-variation">
+                        <div>Size</div>
+                        <div class="detail-tile">S</div>
+                        <div class="detail-tile">M</div>
+                        <div class="detail-tile">L</div>
+                        <div class="detail-tile">XL</div>
+                        <div class="detail-tile">XXL</div>
+                    </div>
+                    <div class="detail-variation">
+                        <div>Color</div>
+                        <div class="detail-tile">
+                            <div id="color-box"></div>
+                            <p>#242424</p>
+                            <img id="color-dropdown" src="./Assets/icon_angleDown.png" alt="">
+                        </div>
+                    </div>
+                    <div class="detail-variation">
+                        <div>Quantity</div>
+                        <div class="detail-tile">
+                            <p>-</p>
+                            <p id="counter">5</p>
+                            <p>+</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="emerald button add-to-cart">
+                    <img src="./Assets/header_shoppingCart.png" alt="">
+                    <p>Add to Cart</p>
+                </div>
             </div>
         </section>
 
@@ -104,7 +203,12 @@
                 </div>
 
                 <div class="review-header-tool">
-
+                    <div class="review-tool filter-review">
+                        Filter
+                    </div>
+                    <div class="review-tool sort-review">
+                        Sort by
+                    </div>
                 </div>
             </div>
 
