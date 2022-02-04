@@ -177,7 +177,7 @@ section {
   display: flex;
   flex-direction: row;
   gap: 1em;
-  border: 2.6px solid var(--dark-emerald);
+  border: 2.2px solid black;
   font-size: 1em;
 }
 
@@ -189,7 +189,8 @@ section {
 
 .publish.button {
   font-weight: 500;
-  color: var(--dark-emerald);
+  color: #8ca3a5;
+  border-color: #8ca3a5;
 }
 
 .emerald.button.add-to-cart {

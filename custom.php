@@ -87,7 +87,7 @@
 
                     <div class="publish-design">
                         <div class="publish button">
-                            <img src="./Assets/icon_publish.png" alt="">
+                            <img src="./Assets/icon_publishOff.png" alt="">
                             <p>Publish Design</p>
                         </div>
                         <p class="upload-clause">Upload the design first</p>
@@ -107,7 +107,7 @@
                         <div>Color</div>
                         <div class="detail-tile">
                             <div id="color-box"></div>
-                            <p>#242424</p>
+                            <p>Black</p>
                             <img id="color-dropdown" src="./Assets/icon_angleDown.png" alt="">
                         </div>
                     </div>
