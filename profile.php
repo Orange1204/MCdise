@@ -69,6 +69,15 @@
         position: relative;
         top: -200px;
     }
+
+    .item-container p {
+        font-size: 18px;
+    }
+
+    .profile-rating {
+        justify-content: right;
+    }
+
 </style>
 
 <body>
@@ -84,7 +93,7 @@
 
                 <div class="wrapper">
                     <div class="cover-image">
-                        <img src="./Assets/cover.jpg" class="cover-pic">
+                        <img src="./Assets/cover-default.png" class="cover-pic">
                         <!-- tambahan untuk transisi-->
                         <div class="profilepic__content">
                             <span class="profilepic__icon"><img src="./Assets/camera-white-icon.png" alt=""></span>
@@ -92,7 +101,7 @@
                         </div>
                     </div>
                     <div class="profile-image">
-                        <img src="./Assets/profile.jpeg" class="profile-pic">
+                        <img src="./Assets/profile-default.png" class="profile-pic">
                         <!-- tambahan untuk transisi-->
                         <div class="profilepic__content">
                             <span class="profilepic__icon"><img src="./Assets/camera-white-icon.png" alt=""></span>
@@ -119,13 +128,13 @@
                         </div>
                         <div class="shop-count">
                             <div class="product-count">
-                                80 Products
+                                0 Products
                             </div>
                             <div class="followers-count">
-                                2.5k Followers
+                                0 Followers
                             </div>
                             <div class="following-count">
-                                10 Following
+                                0 Following
                             </div>
                         </div>
                         <div class="shop-location">
@@ -134,16 +143,8 @@
                         </div>
                     </div>
                     <div class="profile-rating">
-                        <div class="rating-title">
-                            <h3>Rating</h3>
-                        </div>
                         <div class="rating-point">
-                            <div class="rating-score">
-                                <h2>4.5</h2>(232)
-                            </div>
-                            <div class="rating-star">
-                                <img src="Assets/star-4half.png" alt="">
-                            </div>
+                            <h3>No rating yet</h3>
                         </div>
                     </div>
                 </div>
@@ -189,38 +190,10 @@
                         <img src="./Assets/filter-icon.png" alt="">
                     </div>          
                 </div>  
-                <div class="item-container">
-                    <?php for ($i = 0; $i < 10; $i++) : ?>
-                        <div class="popular-tile">
-                            <div class="popular-image">
-                                <img src="./Assets/topMerch.png" alt="">
-                            </div>
-                            <div class="productDescription">
-                                <div class="productName">Product Title</div>
-                                <div class="productInfo">
-                                    <p class="productPrice">Rp 110.000</p>
-                                    <p class="productCount">10K+ Sold</p>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endfor; ?>
-                </div>
-
-                <div class="paginations">
-                    <table cellspacing="5" cellpadding="30">
-                        <tr>
-                            <td><a href="">&laquo; Prev</a></td>
-                            <td><a href="">1</a></td>
-                            <td><a href="">2</a></td>
-                            <td><a href="">3</a></td>
-                            <td><a href="">4</a></td>
-                            <td>...</td>
-                            <td><a href="">9</a></td>
-                            <td><a href="">10</a></td>
-                            <td><a href="">Next &raquo;</a></td>
-                        </tr>
-                    </table>
-                </div>
+                <div class="item-container blank">
+                    <img src="./Assets/illus-profile.png" class="illus-image" alt="">
+                    <p>You don't have any design to sell yet</p>
+                </div> 
                 <div class="add-product-href">
                     <a href="" class="emerald button">Add Product Design</a>
                 </div>       
