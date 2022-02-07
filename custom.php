@@ -74,6 +74,10 @@
                         <p>Total Price</p>
                         <p>Rp 55.000,00</p>
                     </div>
+
+                    <div>
+                        <a href="" class="price-detail clause">See details</a>
+                    </div>
                 </div>
 
                 <div class="detail-upload">
@@ -82,7 +86,7 @@
                             <img src="./Assets/icon_upload.png" alt="">
                             <p>Upload Image</p>
                         </div>
-                        <p class="upload-clause">(.JPG, .JPEG, .PNG)</p>
+                        <p class="upload clause">(.JPG, .JPEG, .PNG)</p>
                     </div>
 
                     <div class="publish-design">
@@ -90,7 +94,7 @@
                             <img src="./Assets/icon_publishOff.png" alt="">
                             <p>Publish Design</p>
                         </div>
-                        <p class="upload-clause">Upload the design first</p>
+                        <p class="publish clause">Upload the design first</p>
                     </div>
                 </div>
 
@@ -121,9 +125,15 @@
                     </div>
                 </div>
 
-                <div class="emerald button add-to-cart">
-                    <img src="./Assets/header_shoppingCart.png" alt="">
-                    <p>Add to Cart</p>
+                <div class="buttons-container">
+                    <div class="download button">
+                        <img src="./Assets/icon_download.png" alt="">
+                        <p>Template</p>
+                    </div>
+                    <div class="emerald button add-to-cart">
+                        <img src="./Assets/header_shoppingCart.png" alt="">
+                        <p>Add to Cart</p>
+                    </div>
                 </div>
             </div>
         </section>

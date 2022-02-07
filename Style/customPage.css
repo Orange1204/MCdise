@@ -1,14 +1,4 @@
 
-:root {
-  --dark-emerald: #082e31;
-  --white: #fff;
-  --black: #000;
-  --orange: #fea000;
-  --grey: #323232;
-  --light-grey: #f6f6f6; 
-  --emerald: #18484B;
-}
-
 .button {
   display: block;
   width: fit-content;
@@ -22,12 +12,6 @@
 .button img {
   height: 1.5em;
 }
-
-/* .orange.button {
-  background-color: var(--orange);
-  color: var(--black);
-  font-weight: 600;
-} */
 
 .emerald.button {
   background-color: var(--emerald);
@@ -106,7 +90,7 @@ section {
 }
 
 .detail-tile {
-  background-color: var(--light-grey);
+  background-color: #f6f6f6;
   border-radius: 15px;
   box-shadow: 1px 2px 4px rgb(0 0 0 / 10%);
   padding: 1em;
@@ -161,19 +145,28 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 1em;
+  margin-top: .5em;
   margin-bottom: -1em;
 }
 
-.upload-clause {
+.clause {
   font-size: .85em;
   margin: .6em;
   text-align: center;
   color: var(--emerald);
 }
 
+.price-detail.clause {
+  float: right;
+  margin-bottom: 0;
+  font-size: .75em;
+  color: #8ca3a5;
+}
+
 .upload.button,
-.publish.button {
+.publish.button,
+.download.button,
+.emerald.button.add-to-cart {
   display: flex;
   flex-direction: row;
   gap: 1em;
@@ -193,14 +186,22 @@ section {
   border-color: #8ca3a5;
 }
 
+.download.button {
+  font-weight: 500;
+  color: var(--emerald);
+  border-color: var(--emerald);
+  gap: .3em;
+}
+
 .emerald.button.add-to-cart {
-  align-self: flex-end;
-  display: flex;
-  flex-direction: row;
-  gap: 1rem;
   min-width: fit-content;
-  font-size: 1em;
-  padding: .7em 1em;
+  border-color: var(--emerald);
+}
+
+.buttons-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 
 .detail-variation {
