@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Style/customPage.css">
-    <link rel="stylesheet" href="./CommonShared/headfoot.css">
+    <link rel="stylesheet" href="./Style/customPage.css ?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./CommonShared/headfoot.css ?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -19,8 +19,7 @@
     <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/MCdise/CommonShared/"; ?>
 
     <!-- uncomment kalau root XAMPP = MCdise -->
-    <?php //$commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; 
-    ?>
+    <?php //$commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
 
     <?php include($commonSharedFolder . "header.html"); ?>
 
@@ -139,7 +138,7 @@
         </section>
 
         <section class="design-recommendation">
-            <h2 class="section-title">Design Recommendations</h2>
+            <h2 class="section-title" style="font-size: 30px;">Design Recommendations</h2>
 
             <div class="recom-container">
                 <?php for ($i = 0; $i < 5; $i++) : ?>
@@ -158,9 +157,24 @@
                     </div>
                 <?php endfor; ?>
             </div>
-
             <a href="" class="emerald button">Lihat Selengkapnya</a>
         </section>
+
+        <section class="top-users" id="top-users">         
+            <div class="round-title-category">
+                <h2 style="font-size: 30px;">Seller Recommendations</h2>
+                <div><a href="" style="font-size: 14px;">see more</a></div>
+            </div>
+            <div class="user-items-container">
+                <?php for ($i = 0; $i < 7; $i++) : ?>
+                    <a href="" class="user-item">
+                        <img src="./Assets/pp.png" alt="">
+                        <p>lazymeer54</p>
+                    </a>
+                    <?php endfor; ?>
+            </div>
+        </section>
+        
 
         <section class="product-description">
             <h2 class="section-title">Product Description</h2>

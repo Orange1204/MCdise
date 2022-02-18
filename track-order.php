@@ -23,6 +23,61 @@
     .title-category {
         justify-content: center;
     }
+
+    /* styling khusus profile seller */
+    .cover-image {
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .profile-image {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        overflow: hidden;
+        background-color: black;
+    }
+
+    .profile-image:hover .profilepic__content {
+        opacity: 1;
+    }
+
+    .cover-image:hover .profilepic__content {
+        opacity: 1;
+    }
+
+    .profile-image:hover .profile-pic{
+        opacity: 0.5;
+    }
+
+    .cover-image:hover .cover-pic {
+        opacity: 0.5;
+    }
+
+    .profilepic__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+    }
+
+    .profile-image > .profilepic__content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    .cover-image > .profilepic__content {
+        position: relative;
+        top: -200px;
+    }
+
 </style>
 
 <body>
@@ -38,10 +93,20 @@
 
                 <div class="wrapper">
                     <div class="cover-image">
-                    <img src="./Assets/cover.jpg" class="cover-pic">
+                        <img src="./Assets/cover.jpg" class="cover-pic">
+                        <!-- tambahan untuk transisi-->
+                        <div class="profilepic__content">
+                            <span class="profilepic__icon"><img src="./Assets/camera-white-icon.png" alt=""></span>
+                            <span class="profilepic__text">Edit Cover</span>
+                        </div>
                     </div>
                     <div class="profile-image">
                         <img src="./Assets/profile.jpeg" class="profile-pic">
+                        <!-- tambahan untuk transisi-->
+                        <div class="profilepic__content">
+                            <span class="profilepic__icon"><img src="./Assets/camera-white-icon.png" alt=""></span>
+                            <span class="profilepic__text">Edit Profile</span>
+                        </div>
                     </div>
                 </div>
                 
@@ -82,24 +147,30 @@
                     </div>
                 </div>
 
-                <!-- Profile Description -->
-                <div class="description-detail">
-                    <div class="description-container">
-                        <div class="description-title">
-                            <h2>Description</h2>
-                        </div>
-                        <div class="description-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa adipiscing odio urna viverra faucibus mus egestas quisque mauris.</p>
-                        </div>
+                <!-- navbar profile -->
+                <div class="profile-navbar">
+                    <div></div> 
+                    <!-- kl ga dikasi DIV tambahan, CSS "Product" nya ga mau jalan -->
+                    <div class="profile-item">
+                        <a href="">Product</a>
                     </div>
-                    <div class="medsos-container">
-                        <div class="medsos-title">
-                            <h2>Media Social</h2>
-                        </div>
-                        <div class="medsos-content">
-                            <p>Instagram     :     @ululala</p>
-                            <p>Twitter       :     @laalaa</p> 
-                        </div>
+                    <div class="profile-item">
+                        <a href="">About</a>
+                    </div>
+                    <div class="profile-item">
+                        <a href="">Statistics</a>
+                    </div>
+                    <div class="profile-item">
+                        <a href="">Track Order</a>
+                    </div>
+                    <div class="profile-item">
+                        <a href="">Order History</a>
+                    </div>
+                    <div class="profile-item">
+                        <a href="">Sales Report</a>
+                    </div>
+                    <div class="profile-item">
+                        <a href="">Settings</a>
                     </div>
                 </div>
             </section>          
@@ -176,7 +247,7 @@
                                         <div class="order-item-detail">
                                             <div class="item-pic-det">
                                                 <div class="item-picture">
-                                                    <img src="./Assets/tshirt-polos.png" alt="">
+                                                    <img src="./Assets/tshirt_frontCustomized.png" alt="">
                                                 </div>
                                                 <div class="item-detail">
                                                     <div class="orderItem-title">
@@ -199,8 +270,16 @@
                                     <?php endfor; ?>
                                 </div>
                                 <div class="totalOrder-item">
-                                    <div class="total-title">Total</div>
-                                    <div class="total-price">Rp 1.230.000,00</div>
+                                    <div class="total-title">
+                                        <div>Subtotal</div>
+                                        <div>Shipping Price</div>
+                                        <div>Grand Total</div>
+                                    </div>
+                                    <div class="total-price">
+                                        <div>Rp 1.230.000,00</div>
+                                        <div>Rp 25.000,00</div>
+                                        <div>Rp 1.255.000,00</div>
+                                    </div>
                                 </div>
                             </div>
                         </div><br>

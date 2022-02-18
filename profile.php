@@ -169,6 +169,9 @@
                         <a href="">Order History</a>
                     </div>
                     <div class="profile-item">
+                        <a href="">Sales Report</a>
+                    </div>
+                    <div class="profile-item">
                         <a href="">Settings</a>
                     </div>
                 </div>

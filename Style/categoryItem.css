@@ -62,7 +62,7 @@ section {
 
 .intro {
     color: var(--grey);
-    padding: 3rem;
+    padding: 4rem;
 }
   
 .intro > h2 {
@@ -92,8 +92,8 @@ section {
 
 .category {
     display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .section-title {
@@ -117,7 +117,7 @@ section {
     margin-bottom: 1em;
 }
 
-.category-items-container {
+.category-round-container {
   width: 100%;
   display: flex;
   flex-flow: row;
@@ -130,18 +130,19 @@ section {
   flex-flow: column;
   align-items: center;
   gap: .6em;
+  
 }
 
 .category-item img {
   aspect-ratio: 1 / 1;
-  height: 6.8em;
-  object-fit: cover;
+  height: 7em;
   border-radius: 50%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .category-item p {
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 .motto {
@@ -154,8 +155,3 @@ section {
     width: 70%;
 }
 
-.intro, .motto {
-    border-radius: 20px;
-    box-shadow: 0 .5em 1em rgba(0, 0, 0, 0.15);
-    background-color: rgba(229, 229, 229, 0.4);
-}

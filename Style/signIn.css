@@ -177,8 +177,12 @@ input[type=submit]:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 10%;
+    padding: 18%;
 }
+
+/* .motto img {
+    width: 70%;
+} */
 
 .motto-text {
     display: flex;
@@ -188,10 +192,10 @@ input[type=submit]:hover{
 }
 
 .motto-title {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .motto-sentence {
-    font-size: 24px;
-    letter-spacing: .1rem;
+    font-size: 20px;
+    letter-spacing: .05rem;
 }

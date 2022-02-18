@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Style/style.css">
-    <link rel="stylesheet" href="./CommonShared/headfoot.css">
+    <link rel="stylesheet" href="./Style/style.css ?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="./CommonShared/headfoot.css ?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -61,34 +61,37 @@
         </div>
     </div>
 
-    <main class="container">
+    <main class="container">        
         <div class="section-container">
-
             <section class="category" id="category">
-                <h2>category</h2>
+                
+                <div class="round-title-category">
+                    <h2>Our Category</h2>
+                    <div></div>
+                </div>
                 <div class="category-items-container">
                     <a href="" class="category-item">
-                        <img src="./Assets/category_shirt.png" alt="">
+                        <img src="./Assets/cat_tshirt.png" alt="">
                         <p>T-shirt</p>
                     </a>
                     <a href="" class="category-item">
-                        <img src="./Assets/category_jacket.png" alt="">
+                        <img src="./Assets/cat_jacket.png" alt="">
                         <p>Jacket</p>
                     </a>
                     <a href="" class="category-item">
-                        <img src="./Assets/category_hoodie.png" alt="">
+                        <img src="./Assets/cat_hoodie.png" alt="">
                         <p>Hoodie</p>
                     </a>
                     <a href="" class="category-item">
-                        <img src="./Assets/category_hat.png" alt="">
+                        <img src="./Assets/cat_hat.png" alt="">
                         <p>Hat</p>
                     </a>
                     <a href="" class="category-item">
-                        <img src="./Assets/category_pouch.png" alt="">
+                        <img src="./Assets/cat_pouch.png" alt="">
                         <p>Bag & Pouch</p>
                     </a>
                     <a href="" class="category-item">
-                        <img src="./Assets/category_keychain.png" alt="">
+                        <img src="./Assets/cat_keychain.png" alt="">
                         <p>Home Decor</p>
                     </a>
                 </div>
@@ -157,7 +160,58 @@
                 </div>
             </section>
 
-            <section class="articles">Articles</section>
+            <section class="top-users" id="top-users">         
+                <div class="round-title-category">
+                    <h2>Top Rated Users</h2>
+                    <div><a href="" style="font-size: 14px;">see more</a></div>
+                </div>
+                <div class="user-items-container">
+                    <?php for ($i = 0; $i < 7; $i++) : ?>
+                        <a href="" class="user-item">
+                            <img src="./Assets/pp.png" alt="">
+                            <p>lazymeer54</p>
+                        </a>
+                        <?php endfor; ?>
+                </div>
+            </section>
+        
+            <div class="about-container">
+                <div class="about-text">
+                    <div class="about-title">
+                        ABOUT US
+                    </div>
+                    <div class="about-description">
+                        Consequat aliquam quam cursus aliquet in imperdiet. 
+                        Aliquam commodo est nunc adipiscing scelerisque viverra eget a. 
+                        Ornare magna cursus amet, nunc. 
+                        Proin porttitor imperdiet ridiculus id nulla accumsan ultrices laoreet. 
+                        Faucibus aliquam senectus sodales volutpat vestibulum blandit. 
+                        Scelerisque scelerisque felis cras ut quis pulvinar massa. 
+                        Vitae duis ut nunc, mattis vulputate volutpat.
+                    </div>
+                </div>
+                <div class="about-pic">
+                    <img src="./Assets/about-pic.png" alt="">
+                </div>
+            </div>                
+            
+            <div class="about-record">
+                    <div class="about-record-description">
+                        <div class="about-logo"><img src="./Assets/product-icon.png" alt=""></div>
+                        <div class="about-number">34</div>
+                        <div class="about-record-text">Different Products</div>
+                    </div>
+                    <div class="about-record-description">
+                        <div class="about-logo"><img src="./Assets/users-four-icon.png" alt=""></div>
+                        <div class="about-number">20,123,455</div>
+                        <div class="about-record-text">People Use MCdise</div>
+                    </div>
+                    <div class="about-record-description">
+                        <div class="about-logo"><img src="./Assets/diamond-icon.png" alt=""></div>
+                        <div class="about-number">22,064</div>
+                        <div class="about-record-text">Success Stories</div>
+                    </div>
+                </div>
         </div>
 
     </main>

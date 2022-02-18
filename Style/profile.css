@@ -355,13 +355,23 @@ td:hover {
 }
 
 .total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.total-price :nth-child(3) {
     color: #D8571F;
     font-size: 24px;
-    font-weight: bold;
 }
 
 .total-title {
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.total-title :nth-child(3) {
+    font-size: 22px;
+    font-weight: bold;
 }
 
 /* https://codepen.io/nandhukumar/pen/pMwdxY */

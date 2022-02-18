@@ -26,6 +26,7 @@ main {
   grid-template-areas: 
   "detail detail"
     "recom recom"
+    "users users"
     "desc other"
     "review other";
     grid-template-columns: 4fr 1fr;
@@ -484,3 +485,61 @@ section.product-review {
   padding: .5em .5em;
   font-weight: 400;
 }
+
+.top-users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: users;
+  gap: 0;
+}
+
+.round-title-category {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 2rem;
+  font-size: 1.5em;
+}
+
+.round-title-category h2 {
+  width: fit-content;
+  font-weight: 500;
+  flex: 0 0 content;
+}
+
+.round-title-category div {
+  flex: 1 1 0;
+  border-bottom: 3px solid var(--black);
+  position: relative;
+  top: -20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.user-item {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: .5em;
+}
+
+.user-items-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 2rem 0;
+}
+
+.user-item img {
+  aspect-ratio: 1 / 1;
+  height: 6.5em;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+

@@ -93,13 +93,14 @@ section:nth-child(2n) {
   border-bottom: 3px solid var(--black);
 }
 
-.category {
+.category,
+.top-users {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.category > h2 {
+/* .category > h2 {
   width: fit-content;
   text-align: center;
   font-size: 2.4em;
@@ -108,6 +109,28 @@ section:nth-child(2n) {
   padding: 1rem 2rem;
   letter-spacing: .3em;
   color: var(--grey);
+} */
+
+.round-title-category {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+  padding: 0 2rem;
+  font-size: 1.5em;
+}
+
+.round-title-category h2 {
+  width: fit-content;
+  font-weight: 500;
+  flex: 0 0 content;
+}
+
+.round-title-category div {
+  flex: 1 1 0;
+  border-bottom: 3px solid var(--black);
+  margin-bottom: 1em;
+  text-align: right;
 }
 
 .category-items-container {
@@ -116,26 +139,44 @@ section:nth-child(2n) {
   flex-flow: row;
   justify-content: center;
   gap: 2em;
-  padding: 2rem 0;
+  padding-top: 2rem;
 }
 
+.user-item,
 .category-item {
   display: flex;
   flex-flow: column;
   align-items: center;
-  gap: .6em;
+  gap: .5em;
+}
+
+.user-items-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  gap: 1.5em;
+  padding: 2rem 0;
+}
+
+.user-item img {
+  aspect-ratio: 1 / 1;
+  height: 6.5em;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .category-item img {
   aspect-ratio: 1 / 1;
-  height: 6.8em;
-  object-fit: cover;
+  height: 7em;
   border-radius: 50%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
 }
 
 .category-item p {
   font-size: 1.1em;
+  font-weight: bold;
 }
 
 .ourShop, .getHelp {
@@ -273,7 +314,8 @@ section:nth-child(2n) {
   aspect-ratio: 2 / 1;
   display: grid;
   grid-template-columns: 1fr 3fr;
-  padding: 4rem;
+  padding: 3rem 3rem 2.5rem 4rem;
+  background-image: url("../Assets/BgNewArrivals.png");
 }
 
 .newArrivals .section-title {
@@ -284,11 +326,15 @@ section:nth-child(2n) {
   margin: 50% 0 1em 0;
 }
 
+.newArrivals-left {
+  width: 90%;
+}
+
 .newArrivals-right {
   background-image: url("../Assets/newArrivals.png");
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
 }
 
 .button {
@@ -311,4 +357,52 @@ section:nth-child(2n) {
   color: var(--white);
   min-width: 50%;
   font-weight: 500;
+}
+
+.about-container {
+  display: flex;
+  background-color: black;
+  color: white;
+}
+
+.about-text {
+  width: 55%;
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+
+.about-title {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 4%;
+  text-align: center;
+}
+
+.about-pic {
+  width: 45%;
+  display: flex;
+}
+
+.about-pic img {
+  width: 100%;
+}
+
+.about-record {
+  color: white;
+  background-color: var(--emerald);
+  display: flex;
+  justify-content: space-evenly;
+  padding: 4%;
+  align-items: center;
+  text-align: center;
+}
+
+.about-number {
+  font-size: 30px;
+}
+
+.about-record-description {
+  text-align: center;
 }

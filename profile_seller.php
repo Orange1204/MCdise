@@ -101,7 +101,7 @@
                     </div>
                 </div>
                 
-
+                
                 <div class="profile-detail">
                     <div class="profile-description">
                         <div class="shop-name">
@@ -166,6 +166,9 @@
                     </div>
                     <div class="profile-item">
                         <a href="">Order History</a>
+                    </div>
+                    <div class="profile-item">
+                        <a href="">Sales Report</a>
                     </div>
                     <div class="profile-item">
                         <a href="">Settings</a>
