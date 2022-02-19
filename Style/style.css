@@ -57,7 +57,7 @@
 
 .intro-item > img {
   height: 3rem;
-  aspect-ratio: 1 / 1;
+  /* aspect-ratio: 1 / 1; */
   margin-right: 1rem;
 }
 
@@ -301,7 +301,7 @@ section:nth-child(2n) {
 
 .getHelp h2 {
   text-align: center;
-  font-size: 1.3em;
+  font-size: 24px;
   font-weight: 500;
 }
 

@@ -118,7 +118,7 @@
                         <div>Quantity</div>
                         <div class="detail-tile">
                             <p>-</p>
-                            <p id="counter">5</p>
+                            <p id="counter" style="background-color: white;"><b>5</b></p>
                             <p>+</p>
                         </div>
                     </div>

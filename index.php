@@ -50,7 +50,7 @@
                     <p>GARANSI PRODUK 1 TAHUN</p>
                 </div>
                 <div class="intro-item">
-                    <img src="./Assets/category_delivery.png" alt="" class="logo">
+                    <img src="./Assets/category_delivery1.png" alt="" class="logo">
                     <p>JAMINAN TEPAT WAKTU</p>
                 </div>
                 <div class="intro-item">
