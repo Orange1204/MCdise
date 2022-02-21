@@ -16,6 +16,10 @@
 </head>
 
 <style>
+    .track-container * {
+        overflow: hidden;
+    }
+
     .search-bar-container {
         width: 50%;
         padding-bottom: 10px;
