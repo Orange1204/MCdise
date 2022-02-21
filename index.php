@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>MCdise</title>
     <link rel="shortcut icon" href="./Assets/logo_mcDiseSquared.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -61,16 +61,16 @@
         </div>
     </div>
 
-    <main class="container">        
+    <main class="container">
         <div class="section-container">
             <section class="category" id="category">
-                
+
                 <div class="round-title-category">
                     <h2>Our Category</h2>
                     <div></div>
                 </div>
                 <div class="category-items-container">
-                    <a href="" class="category-item">
+                    <a href="./category_item.php" class="category-item">
                         <img src="./Assets/cat_tshirt.png" alt="">
                         <p>T-shirt</p>
                     </a>
@@ -160,7 +160,7 @@
                 </div>
             </section>
 
-            <section class="top-users" id="top-users">         
+            <section class="top-users" id="top-users">
                 <div class="round-title-category">
                     <h2>Top Rated Users</h2>
                     <div><a href="" style="font-size: 14px;">see more</a></div>
@@ -171,47 +171,47 @@
                             <img src="./Assets/pp.png" alt="">
                             <p>lazymeer54</p>
                         </a>
-                        <?php endfor; ?>
+                    <?php endfor; ?>
                 </div>
             </section>
-        
+
             <div class="about-container">
                 <div class="about-text">
                     <div class="about-title">
                         ABOUT US
                     </div>
                     <div class="about-description">
-                        Consequat aliquam quam cursus aliquet in imperdiet. 
-                        Aliquam commodo est nunc adipiscing scelerisque viverra eget a. 
-                        Ornare magna cursus amet, nunc. 
-                        Proin porttitor imperdiet ridiculus id nulla accumsan ultrices laoreet. 
-                        Faucibus aliquam senectus sodales volutpat vestibulum blandit. 
-                        Scelerisque scelerisque felis cras ut quis pulvinar massa. 
+                        Consequat aliquam quam cursus aliquet in imperdiet.
+                        Aliquam commodo est nunc adipiscing scelerisque viverra eget a.
+                        Ornare magna cursus amet, nunc.
+                        Proin porttitor imperdiet ridiculus id nulla accumsan ultrices laoreet.
+                        Faucibus aliquam senectus sodales volutpat vestibulum blandit.
+                        Scelerisque scelerisque felis cras ut quis pulvinar massa.
                         Vitae duis ut nunc, mattis vulputate volutpat.
                     </div>
                 </div>
                 <div class="about-pic">
                     <img src="./Assets/about-pic.png" alt="">
                 </div>
-            </div>                
-            
+            </div>
+
             <div class="about-record">
-                    <div class="about-record-description">
-                        <div class="about-logo"><img src="./Assets/product-icon.png" alt=""></div>
-                        <div class="about-number">34</div>
-                        <div class="about-record-text">Different Products</div>
-                    </div>
-                    <div class="about-record-description">
-                        <div class="about-logo"><img src="./Assets/users-four-icon.png" alt=""></div>
-                        <div class="about-number">20,123,455</div>
-                        <div class="about-record-text">People Use MCdise</div>
-                    </div>
-                    <div class="about-record-description">
-                        <div class="about-logo"><img src="./Assets/diamond-icon.png" alt=""></div>
-                        <div class="about-number">22,064</div>
-                        <div class="about-record-text">Success Stories</div>
-                    </div>
+                <div class="about-record-description">
+                    <div class="about-logo"><img src="./Assets/product-icon.png" alt=""></div>
+                    <div class="about-number">34</div>
+                    <div class="about-record-text">Different Products</div>
                 </div>
+                <div class="about-record-description">
+                    <div class="about-logo"><img src="./Assets/users-four-icon.png" alt=""></div>
+                    <div class="about-number">20,123,455</div>
+                    <div class="about-record-text">People Use MCdise</div>
+                </div>
+                <div class="about-record-description">
+                    <div class="about-logo"><img src="./Assets/diamond-icon.png" alt=""></div>
+                    <div class="about-number">22,064</div>
+                    <div class="about-record-text">Success Stories</div>
+                </div>
+            </div>
         </div>
 
     </main>

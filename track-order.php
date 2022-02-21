@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>MCdise</title>
     <link rel="shortcut icon" href="./Assets/logo_mcDiseSquared.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -46,7 +47,7 @@
         opacity: 1;
     }
 
-    .profile-image:hover .profile-pic{
+    .profile-image:hover .profile-pic {
         opacity: 0.5;
     }
 
@@ -65,7 +66,7 @@
         transition: opacity .2s ease-in-out;
     }
 
-    .profile-image > .profilepic__content {
+    .profile-image>.profilepic__content {
         position: absolute;
         top: 0;
         right: 0;
@@ -73,11 +74,10 @@
         left: 0;
     }
 
-    .cover-image > .profilepic__content {
+    .cover-image>.profilepic__content {
         position: relative;
         top: -200px;
     }
-
 </style>
 
 <body>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="profile-detail">
                     <div class="profile-description">
@@ -149,7 +149,7 @@
 
                 <!-- navbar profile -->
                 <div class="profile-navbar">
-                    <div></div> 
+                    <div></div>
                     <!-- kl ga dikasi DIV tambahan, CSS "Product" nya ga mau jalan -->
                     <div class="profile-item">
                         <a href="">Product</a>
@@ -173,7 +173,7 @@
                         <a href="">Settings</a>
                     </div>
                 </div>
-            </section>          
+            </section>
         </div>
 
         <div class="section-container">
@@ -185,12 +185,12 @@
                             <img src="./Assets/search-bar-icon.png" alt="">
                         </div>
                         <img src="./Assets/filter-icon.png" alt="">
-                    </div>          
-                </div>  
+                    </div>
+                </div>
 
                 <div class="track-container">
                     <?php for ($i = 0; $i < 3; $i++) : ?>
-                        <div class="track-item">            
+                        <div class="track-item">
                             <button class="collapsible">Order Tracking - CB567AXE</button>
                             <div class="track-header">
                                 <div class="track-shipped">
@@ -225,7 +225,7 @@
                                         <p>(229) 555-0109</p>
                                         <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
                                     </div>
-                                    <div class="card-timeline">                                      
+                                    <div class="card-timeline">
                                         <div class="order-tracking completed">
                                             <span class="is-complete"></span>
                                             <p>Ordered<br><span>12:18 WIB 17/02/2022</span></p>
@@ -241,7 +241,7 @@
                                         <div class="order-tracking">
                                             <span class="is-complete"></span>
                                             <p>Completed<br><span></span></p>
-                                        </div>                            
+                                        </div>
                                     </div>
                                     <?php for ($i = 0; $i < 2; $i++) : ?>
                                         <div class="order-item-detail">
@@ -285,23 +285,23 @@
                         </div><br>
                     <?php endfor; ?>
 
-                        <script>
-                            var coll = document.getElementsByClassName("collapsible");
-                            var i;
+                    <script>
+                        var coll = document.getElementsByClassName("collapsible");
+                        var i;
 
-                            for (i = 0; i < coll.length; i++) {
-                                coll[i].addEventListener("click", function() {
-                                    this.classList.toggle("active");
-                                    var content = this.nextElementSibling
-                                        content = content.nextElementSibling;
-                                    if (content.style.display === "block"){
-                                        content.style.display = "none";
-                                    } else {
-                                        content.style.display = "block";
-                                    } 
-                                });
-                            }
-                        </script>
+                        for (i = 0; i < coll.length; i++) {
+                            coll[i].addEventListener("click", function() {
+                                this.classList.toggle("active");
+                                var content = this.nextElementSibling
+                                content = content.nextElementSibling;
+                                if (content.style.display === "block") {
+                                    content.style.display = "none";
+                                } else {
+                                    content.style.display = "block";
+                                }
+                            });
+                        }
+                    </script>
                 </div>
 
                 <div class="paginations">
@@ -318,11 +318,12 @@
                             <td><a href="">Next &raquo;</a></td>
                         </tr>
                     </table>
-                </div>     
+                </div>
             </section>
         </div>
     </main>
 
     <?php include($commonSharedFolder . "footer.html"); ?>
 </body>
+
 </html>

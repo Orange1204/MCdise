@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>MCdise</title>
     <link rel="shortcut icon" href="./Assets/logo_mcDiseSquared.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +19,8 @@
     <?php $commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/MCdise/CommonShared/"; ?>
 
     <!-- uncomment kalau root XAMPP = MCdise -->
-    <?php //$commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; ?>
+    <?php //$commonSharedFolder = $_SERVER["DOCUMENT_ROOT"] . "/CommonShared/"; 
+    ?>
 
     <?php include($commonSharedFolder . "header.html"); ?>
 
@@ -160,7 +161,7 @@
             <a href="" class="emerald button">Lihat Selengkapnya</a>
         </section>
 
-        <section class="top-users" id="top-users">         
+        <section class="top-users" id="top-users">
             <div class="round-title-category">
                 <h2 style="font-size: 30px;">Seller Recommendations</h2>
                 <div><a href="" style="font-size: 14px;">see more</a></div>
@@ -171,10 +172,10 @@
                         <img src="./Assets/pp.png" alt="">
                         <p>lazymeer54</p>
                     </a>
-                    <?php endfor; ?>
+                <?php endfor; ?>
             </div>
         </section>
-        
+
 
         <section class="product-description">
             <h2 class="section-title">Product Description</h2>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>MCdise</title>
     <link rel="shortcut icon" href="./Assets/logo_mcDiseSquared.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +39,7 @@
         opacity: 1;
     }
 
-    .profile-image:hover .profile-pic{
+    .profile-image:hover .profile-pic {
         opacity: 0.5;
     }
 
@@ -57,7 +58,7 @@
         transition: opacity .2s ease-in-out;
     }
 
-    .profile-image > .profilepic__content {
+    .profile-image>.profilepic__content {
         position: absolute;
         top: 0;
         right: 0;
@@ -65,7 +66,7 @@
         left: 0;
     }
 
-    .cover-image > .profilepic__content {
+    .cover-image>.profilepic__content {
         position: relative;
         top: -200px;
     }
@@ -77,7 +78,6 @@
     .profile-rating {
         justify-content: right;
     }
-
 </style>
 
 <body>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                
+
 
                 <div class="profile-detail">
                     <div class="profile-description">
@@ -151,7 +151,7 @@
 
                 <!-- navbar profile -->
                 <div class="profile-navbar">
-                    <div></div> 
+                    <div></div>
                     <!-- kl ga dikasi DIV tambahan, CSS "Product" nya ga mau jalan -->
                     <div class="profile-item">
                         <a href="">Product</a>
@@ -175,7 +175,7 @@
                         <a href="">Settings</a>
                     </div>
                 </div>
-            </section>          
+            </section>
         </div>
 
         <div class="section-container">
@@ -191,19 +191,20 @@
                             <img src="./Assets/search-bar-icon.png" alt="">
                         </div>
                         <img src="./Assets/filter-icon.png" alt="">
-                    </div>          
-                </div>  
+                    </div>
+                </div>
                 <div class="item-container blank">
                     <img src="./Assets/illus-profile.png" class="illus-image" alt="">
                     <p>You don't have any design to sell yet</p>
-                </div> 
+                </div>
                 <div class="add-product-href">
                     <a href="" class="emerald button">Add Product Design</a>
-                </div>       
+                </div>
             </section>
         </div>
     </main>
 
     <?php include($commonSharedFolder . "footer.html"); ?>
 </body>
+
 </html>

@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>MCdise</title>
     <link rel="shortcut icon" href="./Assets/logo_mcDiseSquared.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,13 +28,13 @@
 
                 <div class="wrapper">
                     <div class="cover-image">
-                    <img src="./Assets/cover.jpg" class="cover-pic">
+                        <img src="./Assets/cover.jpg" class="cover-pic">
                     </div>
                     <div class="profile-image">
                         <img src="./Assets/profile.jpeg" class="profile-pic">
                     </div>
                 </div>
-                
+
 
                 <div class="profile-detail">
                     <div class="profile-description">
@@ -86,12 +87,12 @@
                             <h2>Media Social</h2>
                         </div>
                         <div class="medsos-content">
-                            <p>Instagram     :     @ululala</p>
-                            <p>Twitter       :     @laalaa</p> 
+                            <p>Instagram : @ululala</p>
+                            <p>Twitter : @laalaa</p>
                         </div>
                     </div>
                 </div>
-            </section>          
+            </section>
         </div>
 
         <div class="section-container">
@@ -107,8 +108,8 @@
                             <img src="./Assets/search-bar-icon.png" alt="">
                         </div>
                         <img src="./Assets/filter-icon.png" alt="">
-                    </div>          
-                </div>  
+                    </div>
+                </div>
                 <div class="item-container">
                     <?php for ($i = 0; $i < 10; $i++) : ?>
                         <div class="popular-tile">
@@ -140,11 +141,12 @@
                             <td><a href="">Next &raquo;</a></td>
                         </tr>
                     </table>
-                </div>     
+                </div>
             </section>
         </div>
     </main>
 
     <?php include($commonSharedFolder . "footer.html"); ?>
 </body>
+
 </html>

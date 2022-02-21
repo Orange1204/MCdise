@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>MCdise</title>
     <link rel="shortcut icon" href="./Assets/logo_mcDiseSquared.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,13 +52,13 @@
                             <label for="password">Password</label><br>
                             <input type="password" name="password" id="password" placeholder="8-10 characters">
                         </div>
-                        
+
                         <!-- submit -->
                         <div class="signIn-submit">
                             <input type="submit" value="Submit">
                             <div class="submit-text">
-                                <p>Have an account?</p> <a href="">Log In</a> 
-                            </div> 
+                                <p>Have an account?</p> <a href="">Log In</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -86,9 +87,9 @@
                 <div class="motto">
                     <div class="motto-text">
                         <div class="motto-title">
-                            <h1>MCdise</h1> 
+                            <h1>MCdise</h1>
                         </div>
-                        <div class="motto-sentence"> 
+                        <div class="motto-sentence">
                             <p>Express Your Design</p>
                             <p>Create Your Own Merch!</p>
                         </div>
@@ -103,4 +104,5 @@
 
     <?php include($commonSharedFolder . "footer.html"); ?>
 </body>
+
 </html>
