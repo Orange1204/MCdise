@@ -243,7 +243,7 @@
                                             <p>Completed<br><span></span></p>
                                         </div>
                                     </div>
-                                    <?php for ($i = 0; $i < 2; $i++) : ?>
+                                    <?php for ($j = 0; $j < 2; $j++) : ?>
                                         <div class="order-item-detail">
                                             <div class="item-pic-det">
                                                 <div class="item-picture">
